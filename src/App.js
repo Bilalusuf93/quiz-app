@@ -49,6 +49,7 @@ function App() {
     if (isAnswerSelected(questions[currentQuestion])) {
       setScore(calculateScore());
       setShowScore(true);
+
     }
   };
 
@@ -114,9 +115,8 @@ function App() {
                   (option, index) => (
                     <button
                       onClick={() => handleAnswerButtonClick(option, index)}
-                      className={`button-style${
-                        option.isSelected === true ? " button-hover" : ""
-                      }`}
+                      className={`button-style${option.isSelected === true ? " button-hover" : ""
+                        }`}
                       key={index}
                     >
                       {option.answerText}
