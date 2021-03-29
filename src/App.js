@@ -49,7 +49,7 @@ function App() {
     if (isAnswerSelected(questions[currentQuestion])) {
       setScore(calculateScore());
       setShowScore(true);
-
+      // changes in dev01 branch
     }
   };
 
